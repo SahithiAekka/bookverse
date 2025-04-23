@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
-import jwt
-import datetime
-from functools import wraps
+import jwt #used to create and verify JSON webtokens 
+import datetime # lets you set token time expiration 
+from functools import wraps # helps build a decorator to protect routes 
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -9,7 +9,7 @@ app = Flask(__name__)
 # This secret key is used to encode/decode JWT tokens
 SECRET_KEY = 'your_secret_key_here'  # Replace with a secure random key!
 
-# A sample "database" for demo purposes (use real DB in production)
+# fake database for demo purposes (use real DB in production)
 USERS = {
     "admin": "password",
     "sahithi": "secure123"

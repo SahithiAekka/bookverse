@@ -1,4 +1,6 @@
 Micro service name : auth_service
+                    
+Checks if a username and password are correct and if so gives back a token like a digital pass 
 
 We're using Flask- light weight web framework in python for creating API's 
             JWT(JSON Web Token) - Securly transmit user identity between client and server 
