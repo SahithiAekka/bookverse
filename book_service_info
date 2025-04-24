@@ -1,0 +1,20 @@
+Micro service name: Book service 
+
+there are four endoints 
+- GET/books ---> list every book
+- GET/books/<id> ---> get one book 
+- POST/books ---> add a new book 
+- PUT/books/<id> ---> update a book 
+
+
+BOOKS list	                Temporary storage so we don’t need a real DB right now.
+
+token_required decorator	Copy‑pasted guardian that makes sure only logged‑in users (with a valid JWT) can add or update books.
+
+/books GET	                Returns every book. No login needed (public catalog).
+
+/books/<id> GET	            Looks up a single book by its number.
+
+/books POST	                Adds a book. Needs JWT. Generates next numeric id.
+
+/books/<id>                 PUT	Modifies title/author. Needs JWT.

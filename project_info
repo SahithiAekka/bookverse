@@ -1,4 +1,4 @@
-Project Bookverse
+Project Bookverse 📜 
 
 step 1 : created git hub repo 
 
@@ -15,6 +15,26 @@ step 2: install required libraries
 step 3: microservices creation 
 
         authentication service; auth_service.py 
-        
 
 
+4 🧪 Local‑Test Checklist
+
+Service	Port	Start command
+Auth	5000	python auth_service.py
+Book	5001	python book_service.py
+User	5002	python user_service.py
+Review	5003	python review_service.py
+
+Flow to test:
+
+Login via Auth → save token.
+
+Add user → POST /users (no token).
+
+Update user → PUT /users/<id> (send token).
+
+List books → GET /books.
+
+Add review → POST /books/<id>/reviews (send token).
+
+List reviews → GET /books/<id>/reviews.
