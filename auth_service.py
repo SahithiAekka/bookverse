@@ -5,6 +5,8 @@ from functools import wraps # helps build a decorator to protect routes
 
 # Initialize Flask app
 app = Flask(__name__)
+# __name__ its a specail python variable. 
+# it won't run the imported files. when you mention this app = flask(__name__)
 
 # This secret key is used to encode/decode JWT tokens
 SECRET_KEY = 'your_secret_key_here'  # Replace with a secure random key!

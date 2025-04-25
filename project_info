@@ -4,13 +4,15 @@ step 1 : created git hub repo
 
 step 2: install required libraries 
 
-        pip instal flask : for rest API backend 
+        pip install flask : for rest API backend 
 
         python.exe -m pip install --upgrade pip : upgraded pip 25.0.1 
 
         pip install boto3 :  for AWS SDK to interact with services like dynamodb 
 
         pip install sqlalchemy psycopg2 : for PostgreSQL database
+
+uv- written in rust, 100x faster 
 
 step 3: microservices creation 
 

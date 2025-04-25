@@ -1,0 +1,12 @@
+1. What is flask? Why are you using it?? 
+    Lightweight and flexible web framework. lets you build web application using Python code. 
+    it give you the same output 
+
+Frameowrk is a structured foundation of pre written code 
+
+
+2. What is JSON?? why are you using it?? 
+
+3. What is a web token? why use it?? 
+
+4. What is API ?? What is REST API?? 
